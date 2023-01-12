@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     int x, y, color;
     int width, height;
     int new_width, new_height;
-    char *ascii = "\u2588";
+    char *ascii = " ";
 
     if (argc < 4) {
         printf("Usage: %s <input_image> <width> <height>\n", argv[0]);
