@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
     for (y = 0; y < new_height; y++) {
         for (x = 0; x < new_width; x++) {
             color = gdImageGetPixel(im_resized, x, y);
-            printf("\033[48;2;%d;%d;%m%s", gdImageRed(im_resized, color), gdImageGreen(im_resized, color), gdImageBlue(im_resized, color), ascii);
+            printf("\033[48;2;%d;%d;%dm%s", gdImageRed(im_resized, color), gdImageGreen(im_resized, color), gdImageBlue(im_resized, color), ascii);
         }
         printf("\n");
     }
